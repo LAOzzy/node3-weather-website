@@ -27,11 +27,11 @@ weatherForm.addEventListener('submit', (e) =>{
     fetch('http://10.252.3.100:3000/Weather?address='+location).then((response) => {
         response.json().then((data) => {
             if(data.error){
-                console.log(data.error)
+                //console.log(data.error)
                 messageOne.textContent = data.error
                 messageTwo.textContent = ''
             }else{
-                console.log(data)
+                //console.log(data)
                 messageOne.textContent = data.location
                 messageTwo.textContent = data.current_temp
                 //console.log(data.forecast)
