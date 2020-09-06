@@ -35,7 +35,7 @@ weatherForm.addEventListener('submit', (e) =>{
                 //console.log(data)
                 messageOne.textContent = data.location
                 messageTwo.textContent = data.current_temp
-                weatherPicture.src = data.weather_icons
+                weatherPicture.setAttribute("src",data.weather_icons)
                 //console.log(data.forecast)
             }
         })
